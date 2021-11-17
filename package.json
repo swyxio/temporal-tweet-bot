@@ -1,0 +1,30 @@
+{
+  "author": "Josh Goldberg <me@joshuakgoldberg.com>",
+  "dependencies": {
+    "@temporalio/client": "^0.15.0",
+    "@temporalio/worker": "^0.15.0",
+    "@temporalio/workflow": "^0.15.0",
+    "cross-fetch": "^3.1.4",
+    "dotenv": "^10.0.0",
+    "node-emoji": "^1.11.0",
+    "twitter-api-v2": "^1.6.5"
+  },
+  "description": "Example temporal.io package that tweets a random pun and emoji daily.",
+  "keywords": [
+    "temporal",
+    "temporalio",
+    "pun",
+    "emoji",
+    "tweet",
+    "bot"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "temporal-tweet-bot",
+  "type": "module",
+  "scripts": {
+    "worker": "node src/worker.mjs",
+    "workflow": "node src/execute-workflow.mjs"
+  },
+  "version": "1.0.0"
+}
